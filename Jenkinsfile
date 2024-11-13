@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/dung-mai/react-node-jenkins.git'
+                git branch: 'main',
+                url: 'https://github.com/dung-mai/react-node-jenkins.git'
             }
         }
 
